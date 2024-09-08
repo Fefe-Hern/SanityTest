@@ -42,10 +42,4 @@ namespace SanityTest
         public string _type { get; set; }
         public string current { get; set; }
     }
-
-    public class Image
-    {
-        public string ImageUrl { get; set; }
-        public string ImageHtml { get; set; }
-    }
 }
