@@ -104,6 +104,7 @@
     <Compile Include="Webpage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".env" />
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

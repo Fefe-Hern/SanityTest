@@ -36,7 +36,7 @@ namespace SanityTest
 
             // Use LINQ to obtain the first page that matches
             var pages = sanity.DocumentSet<Webpage>();
-            var webpage = await pages.Where(p => p.Slug.current == slugToGet).FirstOrDefaultAsync();
+            var webpage = await pages.Where(p => p.Slug.current.Contains(slugToGet)).FirstOrDefaultAsync();
 
             // Use HtmlBuilder to generate the HTML for sections (Body and Images)
             string htmlBody = await sanity.HtmlBuilder.BuildAsync(webpage.Body);
